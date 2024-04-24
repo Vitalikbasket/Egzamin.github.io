@@ -1,4 +1,4 @@
-function lista do kontaktu() {
+function formularz() {
 	let imie = document.getElementById("imie");
 	let nazwisko = document.getElementById("nazwisko");
 	let email = document.getElementById("email").value.toLowerCase();
