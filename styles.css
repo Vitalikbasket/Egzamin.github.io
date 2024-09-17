@@ -1,0 +1,87 @@
+/* Domyślne wartości dla wszystkich selektorów */
+* {
+    font-family: 'Garamond', serif; /* Krój czcionki Garamond */
+    text-align: center; /* Wyrównanie tekstu do środka */
+  }
+  
+  /* Wspólne dla wszystkich bloków lewych */
+  .lewy-blok {
+    width: 72%; /* Szerokość 72% */
+  }
+  
+  /* Pierwszy lewy blok */
+  .lewy-blok.pierwszy {
+    background-color: #795548; /* Kolor tła #795548 */
+    font-size: 170%; /* Rozmiar czcionki 170% */
+  }
+  
+  /* Drugi lewy blok */
+  .lewy-blok.drugi {
+    height: 400px; /* Wysokość 400px */
+  }
+  
+  /* Wspólne dla obu prawych bloków */
+  .prawy-blok {
+    background-color: #BCAAA4; /* Kolor tła #BCAAA4 */
+    color: #795548; /* Kolor czcionki #795548 */
+    height: 400px; /* Wysokość 400px */
+    width: 28%; /* Szerokość 28% */
+  }
+  
+  /* Stopka */
+  footer {
+    background-color: #795548; /* Kolor tła #795548 */
+    color: white; /* Biały kolor czcionki */
+    padding: 20px; /* Marginesy wewnętrzne 20px */
+  }
+  
+  /* Tabela */
+  table {
+    margin: 0 auto; /* Marginesy zewnętrzne wyliczane automatycznie */
+    width: 80%; /* Szerokość 80% */
+    border: 1px solid #795548; /* Obramowanie linią ciągłą 1px #795548 */
+    border-collapse: collapse; /* Scalanie obramowania */
+  }
+  
+  table tr:hover {
+    background-color: sienna; /* Tło wiersza zmienia się na Sienna */
+    color: white; /* Kolor czcionki na biały */
+  }
+  
+  /* Nagłówek czwartego stopnia */
+  h4 {
+    font-size: 200%; /* Rozmiar czcionki 200% */
+  }
+  
+  /* Obraz */
+  img {
+    padding: 20px; /* Marginesy wewnętrzne 20px */
+    border-radius: 40px; /* Zaokrąglenie rogów 40px */
+  }
+  
+  /* Odnośnik */
+  a {
+    color: white; /* Biały kolor czcionki */
+  }
+  
+  /* Pole radio */
+  input[type="radio"] {
+    margin: 7px; /* Marginesy zewnętrzne 7px */
+  }
+.button-back {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #e32636;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.button-back:hover {
+    background-color: #49191d;
+}  
