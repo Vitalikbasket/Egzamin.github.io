@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prace 5 Klasa</title>
+    <style>
+        body {
+          
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f6f7f8, #e9eff1);
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        header {
+            background-color: #ffffff; /* Białe tło nagłówka */
+            color: #e32636; /* Czerwony kolor tekstu w nagłówku */
+            padding: 1em;
+            text-align: center;
+            border-bottom: 2px solid #e32636; /* Czerwony pasek u dołu nagłówka */
+        }
+        nav {
+            background-color: #e32636; /* Ciemniejszy odcień czerwieni */
+            text-align: center;
+            padding: 0.5em;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff; /* Biały kolor linków */
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
+            border-radius: 5px; /* Zaokrąglone rogi */
+            background-color: #49191d; /* Ciemniejszy kolor tła linków */
+        }
+        section {
+            padding: 2em;
+            max-width: 1000px; /* Maksymalna szerokość sekcji */
+            margin: 0 auto; /* Wyśrodkowanie sekcji */
+        }
+        footer {
+            background-color: #e32636; /* Czerwone tło stopki */
+            padding: 1em;
+            text-align: center;
+            color: #fff; /* Biały kolor tekstu w stopce */
+            margin-top: 20px;
+        }
+        .thumbnail-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .thumbnail {
+            width: 300px; /* Szerokość miniaturki */
+            height: 200px; /* Wysokość miniaturki */
+            border-radius: 10px; /* Zaokrąglone rogi miniaturki */
+            overflow: hidden; /* Ukrycie ewentualnych przekraczających elementów */
+            position: relative; /* Konieczne dla animacji */
+            opacity: 0;
+            transform: translateY(-50px);
+            animation: drop 0.6s forwards;
+        }
+        .thumbnail img {
+            width: 100%; /* Zapełnia szerokość kontenera */
+            height: 100%; /* Zapełnia wysokość kontenera */
+            object-fit: cover; /* Zachowuje proporcje obrazu */
+        }
+        .thumbnail:hover {
+            filter: grayscale(0%) brightness(100%); /* Efekt przy najechaniu */
+            transform: scale(1.1); /* Powiększenie przy najechaniu */
+        }
+        .button-back {
+            display: inline-block;
+            width: 100px;
+            padding: 10px;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #e32636;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+        .button-back:hover {
+            background-color: #49191d;
+        }
+        @keyframes drop {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Opóźnienia animacji dla kolejnych miniatur */
+        .thumbnail:nth-child(1) { animation-delay: 0.1s; }
+        .thumbnail:nth-child(2) { animation-delay: 0.2s; }
+        .thumbnail:nth-child(3) { animation-delay: 0.3s; }
+        .thumbnail:nth-child(4) { animation-delay: 0.4s; }
+        .thumbnail:nth-child(5) { animation-delay: 0.5s; }
+
+        /* Styl dla monet */
+        .coin {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url('coin.png') no-repeat center center;
+            background-size: cover;
+            opacity: 0;
+            animation: fall linear;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh); /* Spada z góry do dołu */
+                opacity: 1;
+            }
+        }
+    </style>
+        <script src="gry.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Vitalii Kulynych VTI</h1>
+    </header>
+
+    <!-- Wrzesień -->
+    <section id="carols">
+        <h2>Wrzesień</h2>
+        <div class="thumbnail-container">
+            <a href="index1.html" class="thumbnail">
+                <img src="znaczek1.png" alt="Praca 1" />
+            </a>
+            <a href="index2.html" class="thumbnail">
+                <img src="znaczek2.png" alt="Praca 2" />
+            </a>
+            <a href="index3.html" class="thumbnail">
+                <img src="znaczek3.png" alt="Praca 3" />
+            </a>
+        </div>
+    </section>
+
+    <!-- Październik -->
+    <section id="games">
+        <h2>Październik</h2>
+        <div class="thumbnail-container">
+            <a href="index4.html" class="thumbnail">
+                <img src="znaczek4.png" alt="Praca 4" />
+            </a>
+        </div>
+    </section>
+
+    <!-- Listopad -->
+    <section id="recipes">
+        <h2>Listopad</h2>
+        <div class="thumbnail-container">
+            <a href="jedzonko.html" class="thumbnail">
+                <img src="znaczek5.png" alt="Praca 5" />
+            </a>
+        </div>
+    </section>
+
+    <!-- Grudzień -->
+    <section id="social">
+        <h2>Grudzień</h2>
+        <div class="thumbnail-container">
+            <a href="galeria.html" class="thumbnail">
+                <img src="znaczek6.png" alt="Praca 6" />
+            </a>
+        </div>
+    </section>
+
+    <!-- Przycisk "Wróć" -->
+    <footer id="contact">
+        <button class="button-back" onclick="window.history.back()">Wróć</button>
+        <h2>Dane kontaktowe</h2>
+        <p>Napisz do nas pod adresem: kulinicvitalik43@gmail.com</p>
+        <p>Śledź nas na mediach społecznościowych: <a href="https://m.facebook.com/p/Technikum-im-Jana-Zamoyskiego-w-Zwierzy%C5%84cu-100038756511179/" target="_blank">Facebook</a></p>
+    </footer>
+
+
+    <!-- Załaduj skrypty --> 
+</html>

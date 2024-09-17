@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monety</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f6f7f8, #e9eff1);
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .coin {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url('coin.png') no-repeat center center;
+            background-size: cover;
+            opacity: 0;
+            animation: fall linear;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="coins-container"></div>
+    <script>
+        function createCoin() {
+            const coin = document.createElement('div');
+            coin.className = 'coin';
+            coin.style.left = Math.random() * 100 + 'vw';
+            coin.style.animationDuration = Math.random() * 2 + 3 + 's';
+            document.getElementById('coins-container').appendChild(coin);
+            coin.addEventListener('animationend', () => {
+                coin.remove();
+            });
+        }
+
+        setInterval(createCoin, 200);
+    </script>
+</body>
+</html>

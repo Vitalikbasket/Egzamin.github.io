@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela z rowspan i colspan</title>
+    <style>
+        /* Stylowanie do wyśrodkowania tabeli i nagłówka */
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            margin: 20px auto; /* Wyśrodkowanie tabeli */
+            border-collapse: collapse;
+        }
+
+        table, td {
+            border: 1px solid black;
+        }
+
+        td {
+            padding: 10px;
+        }
+        .button-back {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #e32636;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.button-back:hover {
+    background-color: #49191d;
+} 
+    </style>
+<body>
+    <h2>Tablica 3</h2> <!-- Nagłówek tabeli -->
+    
+<body>
+    <table border="1" cellpadding="10">
+        <!-- Pierwszy wiersz z colspan -->
+        <tr>
+            <td colspan="2">Połączone komórki (colspan 2)</td>
+            <td>Komórka 3</td>
+            <td>Komórka 4</td>
+        </tr>
+        <!-- Drugi wiersz z rowspan -->
+        <tr>
+            <td rowspan="2">Komórka z rowspan (rowspan 2)</td>
+            <td>Komórka 6</td>
+            <td>Komórka 7</td>
+            <td>Komórka 8</td>
+        </tr>
+        <!-- Trzeci wiersz -->
+        <tr>
+            <td>Komórka 9</td>
+            <td>Komórka 10</td>
+            <td>Komórka 11</td>
+        </tr>
+        <!-- Czwarty wiersz -->
+        <tr>
+            <td>Komórka 12</td>
+            <td>Komórka 13</td>
+            <td>Komórka 14</td>
+            <td>Komórka 15</td>
+        </tr>
+    </table>
+    <button class="button-back" onclick="window.history.back()">Wróć</button>
+</body>
+</html>
