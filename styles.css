@@ -1,106 +1,28 @@
-/* Domyślne wartości dla wszystkich selektorów */
-* {
-    font-family: 'Garamond', serif; /* Krój czcionki Garamond */
-    text-align: center; /* Wyrównanie tekstu do środka */
-  }
-  
-  /* Wspólne dla wszystkich bloków lewych */
-  .lewy-blok {
-    width: 72%; /* Szerokość 72% */
-  }
-  
-  /* Pierwszy lewy blok */
-  .lewy-blok.pierwszy {
-    background-color: #795548; /* Kolor tła #795548 */
-    font-size: 170%; /* Rozmiar czcionki 170% */
-  }
-  
-  /* Drugi lewy blok */
-  .lewy-blok.drugi {
-    height: 400px; /* Wysokość 400px */
-  }
-  
-  /* Wspólne dla obu prawych bloków */
-  .prawy-blok {
-    background-color: #BCAAA4; /* Kolor tła #BCAAA4 */
-    color: #795548; /* Kolor czcionki #795548 */
-    height: 400px; /* Wysokość 400px */
-    width: 28%; /* Szerokość 28% */
-  }
-  
-  /* Stopka */
-  footer {
-    background-color: #795548; /* Kolor tła #795548 */
-    color: white; /* Biały kolor czcionki */
-    padding: 20px; /* Marginesy wewnętrzne 20px */
-  }
-  
-  /* Tabela */
-  table {
-    margin: 0 auto; /* Marginesy zewnętrzne wyliczane automatycznie */
-    width: 80%; /* Szerokość 80% */
-    border: 1px solid #795548; /* Obramowanie linią ciągłą 1px #795548 */
-    border-collapse: collapse; /* Scalanie obramowania */
-  }
-  
-  table tr:hover {
-    background-color: sienna; /* Tło wiersza zmienia się na Sienna */
-    color: white; /* Kolor czcionki na biały */
-  }
-  table td {
-    padding: 10px; /* Dodajemy 10px marginesu wewnętrznego */
-}
-table {
-  margin: 20px 10px; /* 20px dla góry i dołu, 10px dla lewej i prawej */
-}
-table {
-  margin: 20px 15px 10px; /* 20px dla góry, 15px dla lewej i prawej, 10px dla dołu */
-}
-table {
-  margin: 20px 15px 10px 5px; /* 20px góra, 15px prawy, 10px dół, 5px lewy */
-}
-table {
-  margin-top: 20px;
-  margin-right: 15px;
-  margin-bottom: 10px;
-  margin-left: 5px;
+/* Stylowanie paragrafów */
+
+#paragraf1 {
+    font-size: 22px; /* Zmiana wielkości tekstu w pikselach (stała wartość) */
+    color: blue; /* Zmiana koloru tekstu */
+    font-weight: bold; /* Zmiana wagi tekstu na pogrubioną */
+    text-transform: uppercase; /* Zmiana tekstu na wielkie litery */
+    letter-spacing: 2px; /* Zwiększenie odstępu między literami */
+    line-height: 1.6; /* Zwiększenie odstępu między liniami */
 }
 
-  
-  /* Nagłówek czwartego stopnia */
-  h4 {
-    font-size: 200%; /* Rozmiar czcionki 200% */
-  }
-  
-  /* Obraz */
-  img {
-    padding: 20px; /* Marginesy wewnętrzne 20px */
-    border-radius: 40px; /* Zaokrąglenie rogów 40px */
-  }
-  
-  /* Odnośnik */
-  a {
-    color: white; /* Biały kolor czcionki */
-  }
-  
-  /* Pole radio */
-  input[type="radio"] {
-    margin: 7px; /* Marginesy zewnętrzne 7px */
-  }
-.button-back {
-    display: block;
-    width: 100px;
-    padding: 10px;
-    margin: 20px auto;
-    text-align: center;
-    background-color: #e32636;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
+#paragraf2 {
+    font-size: 1.5em; /* Wielkość zależna od rozmiaru tekstu nadrzędnego elementu (skalowalna) */
+    color: green; /* Zmiana koloru tekstu */
+    font-family: 'Arial', sans-serif; /* Zmiana kroju pisma */
+    font-style: italic; /* Zmiana stylu czcionki na kursywę */
+    text-decoration: underline; /* Podkreślenie tekstu */
+    line-height: 2; /* Większa przerwa między liniami */
 }
-.button-back:hover {
-    background-color: #49191d;
-}  
+
+#paragraf3 {
+    font-size: larger; /* Dynamiczne zwiększenie wielkości tekstu względem domyślnej wielkości */
+    color: red; /* Zmiana koloru tekstu */
+    font-weight: 700; /* Cięższa wersja pogrubienia (alternatywa dla "bold") */
+    text-transform: capitalize; /* Pierwsza litera każdego słowa jest wielka */
+    letter-spacing: 3px; /* Jeszcze większy odstęp między literami */
+    line-height: 1.4; /* Zmniejszona przerwa między liniami */
+}
